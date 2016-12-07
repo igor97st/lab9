@@ -1,0 +1,46 @@
+2016-11-18 13:15:35 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRDUCT" not found; SQL statement:
+select * from prduct [42102-192]
+2016-11-18 13:15:43 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" not found; SQL statement:
+select * from product [42102-192]
+2016-11-18 13:18:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" not found; SQL statement:
+select * from product [42102-192]
+2016-11-18 13:22:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE" not found; SQL statement:
+delete table product(
+long_id number,
+name varchar2(25),
+description varchar2(25),
+stock varchar2(25),
+
+) [42102-192]
+2016-11-18 13:23:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE" not found; SQL statement:
+delete table product(
+long_id number,
+name varchar2(25),
+description varchar2(25),
+stock varchar2(25), [42102-192]
+2016-11-18 13:23:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "DELETE PRODUCT([*]
+LONG_ID NUMBER,
+NAME VARCHAR2(25),
+DESCRIPTION VARCHAR2(25),
+STOCK VARCHAR2(25),
+
+) "; SQL statement:
+delete product(
+long_id number,
+name varchar2(25),
+description varchar2(25),
+stock varchar2(25),
+
+) [42000-192]
+2016-11-18 13:24:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "DROP PRODUCT[*] TABLE "; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE"; SQL statement:
+drop product table [42001-192]
+2016-11-18 13:24:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "DROP PRODUCT[*] TABLE() "; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE"; SQL statement:
+drop product table() [42001-192]
